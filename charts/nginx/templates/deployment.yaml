@@ -56,17 +56,13 @@ spec:
           resources:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-          {{- with .Values.volumeMounts }}
           volumeMounts:
             - name: html
               mountPath: /usr/share/nginx/html
-          {{- end }}
-      {{- with .Values.volumes }}
       volumes:
         - name: html
           configMap:
             name: {{ .Release.Name }}-index-html
-      {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
