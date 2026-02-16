@@ -6,7 +6,7 @@ metadata:
   namespace: default
 spec:
   interval: 5m0s
-  url: http://chartmuseum.chartmuseum.svc.cluster.local:8080
+  url: http://chartmuseum.default.svc.cluster.local:8080
   secretRef:
     name: myhelmrepo-secret
 ---
