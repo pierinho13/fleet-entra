@@ -11,6 +11,6 @@ spec:
       version: '6.10.1'
       sourceRef:
         kind: HelmRepository
-        name: mysql
+        name: podinfo-helm-repo
         namespace: default
       interval: 1m
