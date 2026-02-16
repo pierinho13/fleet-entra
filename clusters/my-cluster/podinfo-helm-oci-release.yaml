@@ -1,16 +1,12 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: pod-info-helm-oci
+  name: pod-info-helm-oci-new
   namespace: default
 spec:
   interval: 5m
-  chart:
-    spec:
-      chart: podinfo
-      version: '6.10.1'
-      sourceRef:
-        kind: HelmRepository
-        name: podinfo-helm-repo
-        namespace: default
-      interval: 1m
+  chartRef:
+    kind: OCIRepository
+    name: podinfo-oci-new
+    namespace: default
+  interval: 5m
