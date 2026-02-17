@@ -36,6 +36,9 @@ spec:
   interval: 1m0s
   values:
     # WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
+    image:
+      repository: ghcr.io/weaveworks/wego-app
+      tag: v0.39.0-rc.2
     env:
       WEAVE_GITOPS_FEATURE_TENANCY: "false"
       WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
