@@ -38,6 +38,7 @@ spec:
     # WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     env:
       WEAVE_GITOPS_FEATURE_TENANCY: "false"
+      WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     additionalArgs:
       - --insecure-no-authentication-user=admin
 
