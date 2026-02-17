@@ -33,7 +33,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: ww-gitops
-  interval: 1m0s
+  interval: 5m0s
   values:
     # WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     image:
