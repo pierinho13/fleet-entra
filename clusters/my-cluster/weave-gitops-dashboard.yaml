@@ -35,7 +35,9 @@ spec:
         name: ww-gitops
   interval: 1h0m0s
   values:
-    WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
+    # WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
+    env:
+      WEAVE_GITOPS_FEATURE_TENANCY: "false"
     additionalArgs:
       - --insecure-no-authentication-user=admin
 
